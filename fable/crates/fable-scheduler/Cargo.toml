@@ -1,0 +1,17 @@
+[package]
+name = "fable-scheduler"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fable-scheduler"
+path = "src/main.rs"
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }
+fable-storage = { path = "../fable-storage" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"

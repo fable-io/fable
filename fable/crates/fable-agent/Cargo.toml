@@ -1,0 +1,17 @@
+[package]
+name = "fable-agent"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fable-agent"
+path = "src/main.rs"
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }
+fable-network = { path = "../fable-network" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"

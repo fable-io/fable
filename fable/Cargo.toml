@@ -1,0 +1,28 @@
+[workspace]
+members = [
+    "crates/fable-common",
+    "crates/fable-proto",
+    "crates/fable-raft",
+    "crates/fable-idm",
+    "crates/fable-api",
+    "crates/fable-agent",
+    "crates/fable-scheduler",
+    "crates/fable-reconciler",
+    "crates/fable-kvm",
+    "crates/fable-storage",
+    "crates/fable-network",
+]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Fable Team"]
+license = "Apache-2.0"
+repository = "https://github.com/fable-io/fable"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

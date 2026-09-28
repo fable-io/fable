@@ -1,0 +1,17 @@
+[package]
+name = "fable-api"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fable-api"
+path = "src/main.rs"
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }
+fable-idm = { path = "../fable-idm" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"

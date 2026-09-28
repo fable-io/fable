@@ -1,0 +1,10 @@
+[package]
+name = "fable-network"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }

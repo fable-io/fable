@@ -1,0 +1,18 @@
+[package]
+name = "fable-reconciler"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fable-reconciler"
+path = "src/main.rs"
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }
+fable-raft = { path = "../fable-raft" }
+fable-storage = { path = "../fable-storage" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"

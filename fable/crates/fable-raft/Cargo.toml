@@ -1,0 +1,12 @@
+[package]
+name = "fable-raft"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+openraft = "0.9"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }

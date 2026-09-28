@@ -1,0 +1,16 @@
+[package]
+name = "fable-idm"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fable-idm"
+path = "src/main.rs"
+
+[dependencies]
+fable-common = { path = "../fable-common" }
+fable-proto = { path = "../fable-proto" }
+tokio = { version = "1", features = ["full"] }
+tonic = "0.12"

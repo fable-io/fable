@@ -24,11 +24,4 @@ docs/
 └── reference/       # Reference docs (ARCHITECTURE.md)
 ```
 
-**Common commands**:
-```bash
-cargo build              # Build all crates
-cargo test -p fable-api # Test specific crate
-cargo fmt && cargo clippy
-```
-
-See [BUILD.md](docs/how-to/BUILD.md) for complete build reference.
+See [BUILD.md](docs/how-to/BUILD.md) for complete build and test commands.
